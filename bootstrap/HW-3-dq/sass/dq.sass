@@ -1,0 +1,147 @@
+@import _mixin
+
+// .placeholder
+//     background-color: #FCFCFC
+//     margin: 0px
+//     padding: 0px
+
+// #search-bar::placeholder
+//     color: white
+.img-main
+    // display: flex
+    // align-items: center
+    // justify-content: center
+    // overflow: hidden
+
+.img-main
+    img
+        object-fit: cover
+        object-position: ceneter center
+        height: 70%
+        // max-height: 700px
+        @media (min-width: 300px)
+            height: 70%
+            max-height: 200px
+        @media (min-width: 576px)
+            height: 70%
+            max-height: 320px
+        @media (min-width: 768px)
+            height: 70%
+            max-height: 450px
+        @media (min-width: 992px)
+            height: 70%
+            max-height: 650px
+
+.img-card
+    // border: 3px solid red
+    height: 125px
+    width: 200px
+    display: inline-block
+    overflow: hidden
+    img
+        object-fit: cover
+        object-position: ceneter center
+        height: 125px
+        transition: all 0.3s ease-in-out
+        // height: 125%
+        // width: 200px
+        // max-height: 133px
+        // max-width: 200px
+    img:hover
+        transform: scale(1.2)
+
+.card-tag
+    // width: 46px
+    padding: 0px 8px
+    height: 23px
+    color: #616060
+    background-color: rgb(219, 219, 219)
+    font-size: 12px
+    display: flex
+    justify-content: center
+    align-items: center
+    // background-color: #d31d1d
+
+.card-text
+    overflow: hidden
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    text-overflow: ellipsis
+    -webkit-line-clamp: 2
+    font-size: 20px
+    // max-width: 17ch
+
+.card-end
+    font-size: 10px
+    color: #616060
+
+.text-position
+    margin-left: 100px
+    // margin-bottom: 50px
+    position: absolute
+    top: 70%
+    @media (min-width: 300px)
+        font-size: 15px
+    @media (min-width: 576px)
+        font-size: 20px
+    @media (min-width: 768px)
+        font-size: 25px
+    @media (min-width: 992px)
+        font-size: 30px
+
+.slide-title-text
+    overflow: hidden
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    text-overflow: ellipsis
+    -webkit-line-clamp: 2
+    max-width: 17ch
+    // width: 100%
+    // max-width: 16ch
+
+.carousel-indicators
+    position: absolute
+    .carousel-pages
+        background-color: #b7cf00
+        // height: 8px
+        // width: 50px
+        // border-radius: 10%
+        // background-color: rgb(185, 185, 185)
+    .active
+        background-color: #f50303
+        width: 100px
+        // background-color: rgb(78,78,78)
+
+.carousel-control-prev
+    left: 80%
+.carousel-control-next
+    // border: 1px solid red
+    right: 0%
+// .carousel-control-prev,.carousel-control-next
+//     bottom: 75%
+
+@include hnpx(25)
+@include wnpx(25)
+@include hnpx(30)
+@include wnpx(30)
+@include hnpx(50)
+@include wnpx(50)
+@include hnpx(70)
+@include wnpx(70)
+@include hnpx(100)
+@include wnpx(100)
+@include hnpx(120)
+@include wnpx(120)
+@include hnpx(133)
+@include hnpx(150)
+@include wnpx(150)
+@include hnpx(200)
+@include wnpx(200)
+@include hnpx(300)
+@include wnpx(300)
+@include hnpx(350)
+@include wnpx(350)
+@include wnpx(400)
+@include hnpx(400)
+@include wnpx(700)
+@include hnpx(700)

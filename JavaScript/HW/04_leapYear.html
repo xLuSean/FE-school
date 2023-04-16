@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+
+<body>
+    <h2>Leap Year</h2>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <label for="year">Enter year:</label>
+            <input type="text" id="year" min="1">
+            <button id="calc" onclick="check_leap_year()">Check for leap year</button>
+            <h3 id="result">Result: </h3>
+        </fieldset>
+    </form>
+
+    <script>
+        function check_leap_year() {
+            let year = parseInt(document.getElementById("year").value);
+            let bool;
+
+            if (year % 4 == 0) {
+                if (year % 100 == 0) {
+                    if (year % 400 == 0) {
+                        bool = true;
+                    } else {
+                        bool = false;
+                    }
+                }
+                else {
+                    bool = true;
+                }
+            }
+            else {
+                bool = false;
+            }
+            document.getElementById("result").textContent += bool ? "閏年" : "不是閏年唷";
+        }
+
+    </script>
+</body>
+
+</html>
+
+<!-- document.getElementById("result").innerHTML += `西元${year}為: 閏年` -->

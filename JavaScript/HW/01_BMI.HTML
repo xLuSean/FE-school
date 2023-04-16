@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calc</title>
+</head>
+
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <div class="BMI">
+            <label for="height">Height:</label>
+            <input type="number" id="height" min="1" placeholder="170"> cm
+            <br>
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" min="1" placeholder="60"> kg
+        </div>
+        <div>
+            <button onclick="updateResult()">Calc</button>
+            <p>result: <span id="result"></span></p>
+        </div>
+        <div>BMI = 體重(公斤)/身高(公尺)的平方 <br>
+            BMI ＜ 18.5：過輕<br>
+            18.5≦BMI＜24：正常<br>
+            24≦BMI＜27：過重<br>
+            27≦BMI＜30：輕度肥胖<br>
+            30≦BMI＜35：中度肥胖<br>
+            BMI≧35：重度肥胖</div>
+    </form>
+
+    <script>
+        function calculateBMI() {
+            let h = document.getElementById("height").value / 100;
+            let w = document.getElementById("weight").value;
+            let bmi = w / (h * h);
+            return bmi;
+        }
+
+        function updateResult() {
+            let bmiResult = calculateBMI();
+            let text;
+            if (bmiResult < 18.5) {
+                text = "過輕";
+            } else if (bmiResult >= 18.5 && bmiResult < 24) {
+                text = "正常";
+            } else if (bmiResult >= 24 && bmiResult < 27) {
+                text = "過重"
+            } else if (bmiResult >= 27 && bmiResult < 30) {
+                text = "輕度過重"
+            } else if (bmiResult >= 30 && bmiResult < 35) {
+                text = "中度肥胖"
+            } else if (bmiResult >= 35) {
+                text = "重度肥胖"
+            } else {
+                console.log("error");
+            }
+            document.getElementById("result").innerHTML = `您的BMI為:${Math.round(bmiResult * 100) / 100} (${text})`;
+        }
+    </script>
+
+</body>
+
+
+</html>

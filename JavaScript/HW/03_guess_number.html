@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess number</title>
+</head>
+
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <label for="start">Press Start:</label>
+            <button id="start" onclick="start1()" type="button">Start</button>
+            <p id="answer" style="display: none;"></p>
+            <!-- <p id="answer"></p> -->
+        </fieldset>
+        <fieldset>
+            <label for="number">Guess the number from 1~100:</label>
+            <input type="text" id="number" placeholder="1-100" min="1" max="100">
+            <button id="check" onclick="check1()">Check</button>
+            <h3 id="result">Hi</h3>
+        </fieldset>
+
+    </form>
+
+
+    <script>
+        let i;
+
+        function start1() {
+            i = 0;
+            let num = Math.random();
+            document.getElementById("answer").innerHTML = Math.floor(num * 100 + 1);
+            console.log(document.getElementById("answer").innerHTML)
+        }
+
+        function check1() {
+            i += 1;
+            let guess = parseInt(document.getElementById("number").value);
+            let answer = parseInt(document.getElementById("answer").innerHTML);
+            console.log(answer, guess);
+            if (guess > answer) {
+                document.getElementById("result").innerHTML = `數字太大。 #of try: ${i}`
+            } else if (guess < answer) {
+                document.getElementById("result").innerHTML = `數字太小。 #of try: ${i}`
+            } else if (guess === answer) {
+                document.getElementById("result").innerHTML = `猜中數字：${guess} <br>Reset the number.`
+                start1();
+            } else {
+                document.getElementById("result").innerHTML = "錯誤"
+            }
+            document.getElementById("number").value = ""
+        }
+    </script>
+</body>
+
+</html>

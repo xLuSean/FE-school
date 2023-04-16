@@ -1,0 +1,153 @@
+.bg-tt1 {
+  background-color: #1C2937;
+}
+
+.text-tt1 {
+  color: #1C2937;
+}
+
+.bg-tt2 {
+  background-color: #11171E;
+}
+
+.text-tt2 {
+  color: #11171E;
+}
+
+.bg-tt3 {
+  background-color: #15202A;
+}
+
+.text-tt3 {
+  color: #15202A;
+}
+
+.bg-tt4 {
+  background-color: #23A1EE;
+}
+
+.text-tt4 {
+  color: #23A1EE;
+}
+
+.bg-tt5 {
+  background-color: #FCFCFC;
+}
+
+.text-tt5 {
+  color: #FCFCFC;
+}
+
+body {
+  background-color: #11171E;
+}
+
+.placeholder {
+  background-color: #FCFCFC;
+  margin: 0px;
+  padding: 0px;
+}
+
+.foot-note {
+  font-size: 12px;
+}
+
+#search-bar::-moz-placeholder {
+  color: white;
+}
+
+#search-bar::placeholder {
+  color: white;
+}
+
+.h25px {
+  height: 25px;
+}
+
+.w25px {
+  width: 25px;
+}
+
+.h30px {
+  height: 30px;
+}
+
+.w30px {
+  width: 30px;
+}
+
+.h50px {
+  height: 50px;
+}
+
+.w50px {
+  width: 50px;
+}
+
+.h70px {
+  height: 70px;
+}
+
+.w70px {
+  width: 70px;
+}
+
+.h100px {
+  height: 100px;
+}
+
+.w100px {
+  width: 100px;
+}
+
+.h120px {
+  height: 120px;
+}
+
+.w120px {
+  width: 120px;
+}
+
+.h150px {
+  height: 150px;
+}
+
+.w150px {
+  width: 150px;
+}
+
+.h200px {
+  height: 200px;
+}
+
+.w200px {
+  width: 200px;
+}
+
+.h300px {
+  height: 300px;
+}
+
+.w300px {
+  width: 300px;
+}
+
+.h350px {
+  height: 350px;
+}
+
+.w350px {
+  width: 350px;
+}
+
+.w400px {
+  width: 400px;
+}
+
+.w700px {
+  width: 700px;
+}
+
+.h700px {
+  height: 700px;
+}/*# sourceMappingURL=twitter.css.map */

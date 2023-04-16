@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age</title>
+</head>
+
+<body>
+    <div>
+        <label for="dob">Input your date of birth:</label>
+        <!-- <input type="text" id="dob"> -->
+        <input type="date" id="dob">
+        <button id="calc" onclick="calcAge()">Calc</button>
+        <p id="age"></p>
+    </div>
+    <script>
+        const dob = document.querySelector("#dob");
+        dob.defaultValue = "1990-01-01";
+        function calcAge() {
+            const dobDate = new Date(dob.value);
+            const today = new Date();
+            let age = today.getFullYear() - dobDate.getFullYear();
+            const monthDiff = today.getMonth() - dobDate.getMonth();
+            if ((monthDiff < 0) || monthDiff == 0 && (today.getDate() < dobDate.getDate())) {
+                age--;
+            }
+            // console.log(age);
+
+            document.querySelector("#age").innerHTML = `You are ${age} years old.`
+
+        }
+    </script>
+</body>
+
+</html>

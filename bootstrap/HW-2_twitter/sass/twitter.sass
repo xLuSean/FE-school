@@ -1,0 +1,50 @@
+@import _mixin
+
+$ttColor: #1C2937, #11171E, #15202A, #23A1EE, #FCFCFC
+// nav, background, main, text-bg, text
+
+@for $i from 1 through 5
+    @include bgc(bg-tt#{$i}, nth($ttColor, $i))
+    @include color(text-tt#{$i}, nth($ttColor, $i))
+
+// .twitter-border
+//     border-bottom: 3px
+//     border-color: #23A1EE
+
+body
+    background-color: nth($ttColor, 2)
+
+.placeholder
+    background-color: #FCFCFC
+    margin: 0px
+    padding: 0px
+
+.foot-note
+    font-size: 12px
+
+#search-bar::placeholder
+    color: white
+
+@include hnpx(25)
+@include wnpx(25)
+@include hnpx(30)
+@include wnpx(30)
+@include hnpx(50)
+@include wnpx(50)
+@include hnpx(70)
+@include wnpx(70)
+@include hnpx(100)
+@include wnpx(100)
+@include hnpx(120)
+@include wnpx(120)
+@include hnpx(150)
+@include wnpx(150)
+@include hnpx(200)
+@include wnpx(200)
+@include hnpx(300)
+@include wnpx(300)
+@include hnpx(350)
+@include wnpx(350)
+@include wnpx(400)
+@include wnpx(700)
+@include hnpx(700)
