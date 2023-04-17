@@ -1,0 +1,395 @@
+/* About section ================================ */
+:root {
+    --skill-html: 80%;
+    --skill-css: 65%;
+    --skill-js: 45%;
+    --skill-php: 55%;
+    --skill-mysql: 65%;
+}
+
+h2{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px gray;
+}
+h3{
+    font-size: 35px;
+    /* margin-top: 15px; */
+    margin-bottom: 15px;
+}
+h4{font-size: 25px;
+    /* margin-top: 12px; */
+    margin-bottom: 12px;}
+
+header {
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    background-color: rgb(135, 51, 51);
+    /* text-align: center; */
+    padding: 10px;
+}
+
+.logo>a {
+    width: 100%;
+    text-decoration: none;
+    color: rgb(217, 217, 153);
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    /* display: block; */
+}
+
+.nav-bar>ul{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar>ul>li{
+    /* background-color: rgb(235, 104, 104); */
+    padding: 10px;
+    height: 100%;
+    margin-right: 15px;
+}
+
+.nav-bar>ul>li>a{
+    text-decoration: none;
+}
+
+
+.banner{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 200px;
+    /* background-color: rgb(210, 210, 210); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote{
+    font-size: 30px;
+}
+
+.main {
+    /* border: 2px solid red; */
+    padding: 30px 0;
+    width: 75%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.About {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selfie {
+    /* border: 2px solid red; */
+    width: 45%;
+    height: auto;
+}
+
+#my-pic {
+    max-width: 100%;
+}
+
+#pic1{
+    box-shadow: -10px 10px 5px rosybrown;
+    width: 100%;
+    /* height: 100%; */
+}
+
+
+/* ================================ */
+.descriptions{
+    /* border: 2px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.i-am-info{
+    width: 80%;
+    font-size: 16px;
+}
+
+.education{margin-top: 20px;
+width: 110%;}
+
+.education ul li{
+    padding: 10px;
+    margin: 10px;
+    background-color: #d6f859;
+}
+
+
+.skill-list {
+    /* border: 2px solid red; */
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+}
+
+.skill-list li {
+    /* border: 2px solid red; */
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+}
+
+.skill-name {
+    font-weight: bold;
+    /* display: inline-block; */
+    width: 80px;
+    margin-right: 40px;
+}
+
+.skill-bar {
+    background-color: rgb(243, 181, 99);
+    height: 18px;
+    width: 200px;
+    border-radius: 12px;
+    /* display: inline-block; */
+    /* position:relative */
+    margin-bottom: 10px;
+    box-shadow: inset 1px 2px 2px gray;
+}
+
+.skill-level{
+    /* background-color: aquamarine; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    /* text-align: center; */
+    color:blanchedalmond;
+}
+
+.skill-html{
+    animation: html-level 2s ease-in-out;
+    background: linear-gradient(to right, #d6f859, #FF4500);
+    width: var(--skill-html);
+}
+
+.skill-css{    animation: css-level 2s ease-in-out;
+    background: linear-gradient(to right, #d6f859, #FF4500);
+    width: var(--skill-css);}
+
+.skill-js{    animation: js-level 2s ease-in-out;
+    background: linear-gradient(to right, #d6f859, #FF4500);
+    width: var(--skill-js);
+}
+
+.skill-php{    animation: php-level 2s ease-in-out;
+    background: linear-gradient(to right, #d6f859, #FF4500);
+    width: var(--skill-php);}
+
+.skill-mysql{    animation: mysql-level 2s ease-in-out;
+    background: linear-gradient(to right, #d6f859, #FF4500);
+    width: var(--skill-mysql);}
+
+@keyframes html-level{
+    from{width: 0%;}
+    to{width: var(--skill-html);}}
+
+@keyframes css-level{
+    from{width: 0%;}
+    to{width: var(--skill-css);}}
+
+@keyframes js-level{
+    from{width: 0%;}
+    to{width: var(--skill-js);}}
+
+@keyframes php-level{
+    from{width: 0%;}
+    to{width: var(--skill-php);}}
+
+@keyframes mysql-level{
+    from{width: 0%;}
+    to{width: var(--skill-mysql);}}
+
+
+
+/* Experience section ================================ */
+.Publication {
+    /* border: 2px solid red; */
+}
+
+.papers li{
+    background-color: antiquewhite;
+    margin: 5px 5px;
+    padding: 10px;
+}
+
+ul>li>div{
+    padding: 5px 0px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Portfolio section ================================ */
+.Portfolio {text-align: center;
+margin-top: 30px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;}
+
+.Portfolio h2{
+    width: 100%;
+}
+
+.cards{
+    display: grid;
+    width: 95%;
+    height: 630px;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+
+.card{
+    /* position: relative; */
+    overflow: hidden;
+    transform-style: preserve-3d;
+    /* height: 200px; */
+    height: 100%;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card-front{
+    /* border: 2px solid red; */
+    position:absolute;
+    background-color: #FF4500;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+.card-back{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: transform 1s;
+
+}
+
+.card:hover .card-front{
+    transform: rotateY(180deg);
+}
+.card:hover .card-back{
+    transform: rotateY(0deg)
+}
+
+.card:nth-child(3){
+    grid-area: 1/3/2/5;}
+
+    .card:nth-child(5){
+        grid-area: 2/1/4/3;
+    }
+
+
+
+/* Contact section ================================ */
+.Contact {
+    /* border: 2px solid red; */
+    background-image: linear-gradient(to right top, #d786e7, #f182c4, #f888a6, #f29390, #e4a086);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info{
+    /* border: 2px solid red; */
+    width: 40%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-info {
+    font-size: 20px;
+}
+
+.contact-form{
+    /* border: 2px solid red; */
+    width: 40%;
+}
+
+.contact-form div{
+    padding: 10px 0px;
+    display: flex;
+    /* justify-content: flex-end; */
+    justify-items: center;
+}
+
+.contact-form div label{
+    float: left;
+    padding-right: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contact-form div input, .contact-form div textarea{
+    border-radius: 5px;
+    border: none;
+}
+.contact-form div input{
+    /* border: 2px solid red; */
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-content:flex-start;
+    align-items: start;
+}
+
+.btn-submit{
+    font-size: 25px;
+    margin-left: 50px;
+    padding: 5px 10px;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px gray;
+    /* border: 2px solid red; */
+}
+
+/* ================================ */

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        .container {
+            max-width: 500px;
+            max-height: 400px;
+            height: 400px;
+            margin: auto;
+            background-color: rgb(60, 102, 102);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+        }
+
+        .login {
+            width: 95%;
+            height: 95%;
+            background-color: rgb(206, 196, 196);
+            border-radius: 50px 0 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            justify-content: center;
+            /* align-items: center; */
+            align-content: center;
+        }
+
+        .title {
+            width: 80%;
+            height: 15%;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding-top: 50px; */
+        }
+
+        .keyin {
+            width: 80%;
+            height: 40%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* align-items: center; */
+            align-content: center;
+        }
+
+        .input1 {
+            border: none;
+            border-radius: 10px;
+            width: 80%;
+            height: 25%;
+            margin: 5px 30px 5px 0px;
+            display: block;
+
+        }
+
+        .botton {
+            width: 80%;
+            height: 15%;
+            /* padding-bottom: 25px; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .button1>a {
+            text-decoration: none;
+        }
+
+        .button1 {
+            color: antiquewhite;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px rgb(32, 26, 39);
+            width: 35%;
+            margin: 5px 30px 5px 15px;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .button2 {
+            color: rgb(107, 106, 106);
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button2>a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <form action="#" method="get" enctype="multipart/form-data"></form>
+            <div class="title">Login Infomation</div>
+
+            <div class="keyin">
+                <input class="input1" type="text" placeholder="Ender UserName">
+                <input class="input1" type="text" placeholder="Ender Password">
+            </div>
+
+            <div class="botton">
+                <!-- <div class="button1"><a href="">login</a></div> -->
+                <input class="button1" type="submit" value="Login">
+                <div class="button2"><a href="">Forgot your password?</a></div>
+            </div>
+
+        </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
